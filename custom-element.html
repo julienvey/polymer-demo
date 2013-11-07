@@ -1,12 +1,10 @@
 <polymer-element name="custom-element" noscript>
   <template>
-    <span>Je suis <b>un élément Custom</b> avec un prototype.</span>
+    <span>Je suis <b>un élément Custom</b> nommé {{name}}</span>
   </template>
   <script>
     Polymer('custom-element', {
-      ready: function() {
-        alert('Je suis prêt');
-      }
+    	name: '<custom-element>'
     });
   </script>
 </polymer-element>
