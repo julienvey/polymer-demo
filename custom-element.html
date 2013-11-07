@@ -1,10 +1,11 @@
 <polymer-element name="custom-element" noscript>
   <template>
-    <span>Je suis <b>un élément Custom</b> nommé {{name}}</span>
+    <span>Je suis <b>un élément Custom</b> nommé {{name}} <span style="color: {{color}}">coloré</span></span>
   </template>
   <script>
     Polymer('custom-element', {
-    	name: '<custom-element>'
+    	name: '<custom-element>',
+    	color: 'red'
     });
   </script>
 </polymer-element>
